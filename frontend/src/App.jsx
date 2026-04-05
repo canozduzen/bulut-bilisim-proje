@@ -30,8 +30,9 @@ function App() {
   }
 
   // Görev sil (DELETE)
+  // Görev sil (DELETE)
   const deleteTodo = async (id) => {
-    await fetch(`http://13.62.54.131:3000/api/todos${id}`, {
+    await fetch('http://13.62.54.131:3000/api/todos/' + id, {
       method: 'DELETE'
     })
     fetchTodos() // Listeyi yenile
